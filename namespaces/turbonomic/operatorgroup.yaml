@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: turbonomic
+  annotations:
+    olm.providedAPIs: Xl.v1.charts.helm.k8s.io
+
+spec:
+  targetNamespaces:
+  - turbonomic
